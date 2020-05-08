@@ -15,7 +15,7 @@ public class ProductDao {
     List<Product> products;
 
     public ProductDao() throws SQLException {
-        myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_website","root","canonmx300");
+        myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_website","root",password);
         myStmt = myConn.createStatement();
     }
 
