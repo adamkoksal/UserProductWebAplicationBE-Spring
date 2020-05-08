@@ -13,7 +13,7 @@ public class UserDao {
     List<User> users;
 
     public UserDao() throws SQLException {
-        myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_website","root","canonmx300");
+        myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/my_website","root",password);
         myStmt = myConn.createStatement();
     }
 
